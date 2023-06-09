@@ -2,6 +2,15 @@
     font-family: "IranYekan";
     src: url(/assets/font/IRANYekanWebRegular.ttf);
 }
-body {
-    font-family: "IranYekan";
+
+@layer base {
+    body {
+        font-family: "IranYekan";
+    }
+}
+
+@layer components {
+    .btn {
+        @apply ;
+    }
 }
