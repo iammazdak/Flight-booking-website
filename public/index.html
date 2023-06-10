@@ -40,16 +40,15 @@
             </div>
             <div class="grow flex justify-center items-center">
                 <ul class="w-full flex justify-center items-center text-Black">
-                    <li class="w-24 flex justify-center"><a href="#">صفحه اصلی</a></li>
-                    <li class="w-24 flex justify-center"><a href="#">بلیط</a></li>
-                    <li class="w-24 flex justify-center"><a href="#">پیگیری</a></li>
-                    <li class="w-24 flex justify-center"><a href="#">تور</a></li>
-                    <li class="w-24 flex justify-center">
-                        <a href="#" id="megamenu-btn" class="flex">بیشتر
-                            <svg class="m-1 mt-1.5" width="15" height="15" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <li class="w-24 flex justify-center p-1 select-none"><a href="#">صفحه اصلی</a></li>
+                    <li class="w-24 flex justify-center p-2 select-none"><a href="#">بلیط</a></li>
+                    <li class="w-24 flex justify-center p-1 select-none"><a href="#">پیگیری</a></li>
+                    <li class="w-24 flex justify-center p-1 select-none"><a href="#">تور</a></li>
+                    <li class="w-24 flex justify-center p-1 select-none cursor-pointer" id="megamenu-btn">
+                            بیشتر
+                            <svg id="megamenu-btn-icon" class="m-1 mt-1.5 duration-300" width="15" height="15" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M5 7.5L10 12.5L15 7.5" stroke="#131A29" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
-                        </a>
                     </li>
                 </ul>
             </div>
@@ -65,34 +64,46 @@
             <div class="flex flex-row justify-between m-10">
 
                 <div>
-                    <div class="flex flex-row items-center justify-between mb-14">
-                        <img src="../assets/img/mega-menu icon 1.png" alt="">
-                        <div class="flex flex-col w-[300px] mr-5">
-                            <h3 class="font-bold pb-1">بیمه مسافرتی</h3>
-                            <p class="text-gray-400 text-sm">بیمه مسافرتی هزینه‌های فوریت‌های پزشکی، مفقودی چمدان و هزینه خسارات را جبران می‌کند.</p>
+                    <a href="#">
+                        <div class="flex flex-row items-center justify-between mb-6 p-3 rounded-xl hover:bg-slate-50">
+                            <img src="../assets/img/mega-menu icon 1.png" alt="">
+                            <div class="flex flex-col w-[300px] mr-5">
+                                <h3 class="font-bold pb-1">بیمه مسافرتی</h3>
+                                <p class="text-gray-400 text-sm">بیمه مسافرتی هزینه‌های فوریت‌های پزشکی، مفقودی چمدان و هزینه خسارات را
+                                    جبران می‌کند.</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="flex flex-row items-center justify-between mb-14">
-                        <img src="../assets/img/mega-menu icon 2.png" alt="">
-                        <div class="flex flex-col w-[300px] mr-5">
-                            <h3 class="font-bold pb-1">مجله هرمز فلای</h3>
-                            <p class="text-gray-400 text-sm">وبلاگ هرمز فلای جایی برای اطلاع رسانی رویداد ها و نمایش ها در شهر ها و کشور های مختلف است.</p>
+                    </a>
+                    <a href="#">
+                        <div class="flex flex-row items-center justify-between mb-6 p-3 rounded-xl hover:bg-slate-50">
+                            <img src="../assets/img/mega-menu icon 2.png" alt="">
+                            <div class="flex flex-col w-[300px] mr-5">
+                                <h3 class="font-bold pb-1">مجله هرمز فلای</h3>
+                                <p class="text-gray-400 text-sm">وبلاگ هرمز فلای جایی برای اطلاع رسانی رویداد ها و نمایش ها در شهر ها و کشور
+                                    های مختلف است.</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="flex flex-row items-center justify-between mb-14">
-                        <img src="../assets/img/mega-menu icon 3.png" alt="">
-                        <div class="flex flex-col w-[300px] mr-5">
-                            <h3 class="font-bold pb-1">هرمز فلای پلاس</h3>
-                            <p class="text-gray-400 text-sm">جمع تجربه های ناب سفر در یکجا با سرویس هرمز فلای پلاس!</p>
+                    </a>
+                    <a href="#">
+                        <div class="flex flex-row items-center justify-between mb-6 p-3 rounded-xl hover:bg-slate-50">
+                            <img src="../assets/img/mega-menu icon 3.png" alt="">
+                            <div class="flex flex-col w-[300px] mr-5">
+                                <h3 class="font-bold pb-1">هرمز فلای پلاس</h3>
+                                <p class="text-gray-400 text-sm">جمع تجربه های ناب سفر در یکجا با سرویس هرمز فلای پلاس!</p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
 
                 <div class="flex flex-col w-[300px]">
-                    <h2 class="font-extrabold text-lg">کرمانشاه؛ میهن فرهاد و شیرین</h2>
-                    <img class="w-[350px] py-5" src="../assets/img/content image 1.png" alt="">
-                    <h3 class="font-bold">بازار توپخانه</h3>
-                    <p class="text-gray-400 text-sm pt-2">بازار بزرگ کرمانشاه ۱۸ راسته دارد که بازار توپخانه یکی از راسته‌های اص...</p>
+                    <h2 class="font-extrabold text-lg pr-3 pb-2">کرمانشاه؛ میهن فرهاد و شیرین</h2>
+                    <a href="#">
+                        <div class="p-3 rounded-xl hover:bg-slate-50">
+                            <img class="w-[350px] pb-5" src="../assets/img/content image 1.png" alt="">
+                            <h3 class="font-bold">بازار توپخانه</h3>
+                            <p class="text-gray-400 text-sm py-2">بازار بزرگ کرمانشاه ۱۸ راسته دارد که بازار توپخانه یکی از راسته‌های اص...</p>
+                        </div>
+                    </a>
                 </div>
 
             </div>
