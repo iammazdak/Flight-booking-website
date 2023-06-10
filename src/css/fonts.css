@@ -1,0 +1,67 @@
+/* IranYekan Font */
+@font-face {
+    font-family: IranYekan;
+    font-style: normal;
+    font-weight: 100;
+    src: url(/assets/font/IranYekan/IRANYekanWebThin.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: IranYekan;
+    font-style: normal;
+    font-weight: 300;
+    src: url(/assets/font/IranYekan/IRANYekanWebLight.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: IranYekan;
+    font-style: normal;
+    font-weight: 400;
+    src: url(/assets/font/IranYekan/IRANYekanWebRegular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: IranYekan;
+    font-style: normal;
+    font-weight: 500;
+    src: url(/assets/font/IranYekan/IRANYekanWebMedium.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: IranYekan;
+    font-style: normal;
+    font-weight: 700;
+    src: url(/assets/font/IranYekan/IRANYekanWebBold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: IranYekan;
+    font-style: normal;
+    font-weight: 800;
+    src: url(/assets/font/IranYekan/IRANYekanWebExtraBold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: IranYekan;
+    font-style: normal;
+    font-weight: 900;
+    src: url(/assets/font/IranYekan/IRANYekanWebBlack.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: IranYekan;
+    font-style: normal;
+    font-weight: 950;
+    src: url(/assets/font/IranYekan/IRANYekanWebExtraBlack.ttf) format("truetype");
+}
+
+/* Pinar Font */
+@font-face {
+    font-family: "Pinar";
+    src: url(../assets/font/Pinar/Pinar-VF.ttf);
+}
+
+@font-face {
+    font-family: "Pinar";
+    src: url(../assets/font/Pinar/Pinar-FD-VF.ttf);
+}
