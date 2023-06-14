@@ -21,4 +21,44 @@
     .btn-secondary {
         @apply bg-Light-gray text-gray-500 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-300 focus:ring-opacity-75;
     }
+
+    .navbar {
+        @apply w-full flex justify-around items-center text-Black;
+    }
+
+    .navbar .navbar-item {
+        @apply w-max flex justify-center select-none rounded-lg p-7 cursor-pointer;
+    }
+
+    /* .navbar .navbar-item.navbar-item-sub-menu {
+        @apply p-1;
+    } */
+
+    .navbar .navbar-item:not(.navbar-item-sub-menu) {
+        @apply flex-col;
+    }
+
+    .navbar .navbar-item .navbar-item-hover {
+        @apply invisible;
+    }
+
+    .navbar .navbar-item:hover .navbar-item-hover {
+        @apply visible;
+    }
+
+    .navbar .navbar-item a {
+        @apply text-center;
+    }
+
+    .sidebar-menu {
+        @apply cursor-pointer;
+    }
+}
+
+.overflow-auto {
+    overflow: auto;
+}
+
+.overflow-hidden {
+    overflow: hidden;
 }
