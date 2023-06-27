@@ -682,6 +682,7 @@ body {
 
 .navbar {
   display: flex;
+  height: 100%;
   width: 100%;
   align-items: center;
   justify-content: space-around;
@@ -691,39 +692,80 @@ body {
 
 .navbar .navbar-item {
   display: flex;
-  width: -moz-max-content;
-  width: max-content;
+  height: 100%;
+  width: 20%;
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+  align-items: center;
   justify-content: center;
-  border-radius: 0.5rem;
-  padding: 1.75rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
 }
 
-/* .navbar .navbar-item.navbar-item-sub-menu {
-        @apply p-1;
-    } */
+.navbar .navbar-item:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 242 249 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
 
 .navbar .navbar-item:not(.navbar-item-sub-menu) {
   flex-direction: column;
-}
-
-.navbar .navbar-item .navbar-item-hover {
-  visibility: hidden;
-}
-
-.navbar .navbar-item:hover .navbar-item-hover {
-  visibility: visible;
 }
 
 .navbar .navbar-item a {
   text-align: center;
 }
 
-.sidebar-menu {
+.drawer-navbar {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  align-items: baseline;
+}
+
+.drawer-navbar > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-y-reverse: 0;
+  border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
+  border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
+}
+
+.drawer-navbar {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.drawer-navbar .drawer-navbar-item {
+  display: flex;
+  width: 100%;
+  align-content: flex-start;
+  align-items: flex-start;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.drawer-navbar .drawer-navbar-item:not(.drawer-navbar-item-sub-menu) {
+  flex-direction: column;
+}
+
+.drawer-navbar .drawer-navbar-item-sub-menu {
+  position: relative;
   cursor: pointer;
+}
+
+.mobile-menu-button,
+    .mobile-menu-button-close {
+  cursor: pointer;
+}
+
+.fixed {
+  position: fixed;
 }
 
 .absolute {
@@ -734,8 +776,12 @@ body {
   left: 0px;
 }
 
-.top-0 {
-  top: 0px;
+.top-20 {
+  top: 5rem;
+}
+
+.z-10 {
+  z-index: 10;
 }
 
 .m-1 {
@@ -767,6 +813,14 @@ body {
   margin-top: 0.375rem;
 }
 
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
 .flex {
   display: flex;
 }
@@ -779,6 +833,10 @@ body {
   height: 1.75rem;
 }
 
+.h-8 {
+  height: 2rem;
+}
+
 .h-\[400px\] {
   height: 400px;
 }
@@ -787,16 +845,16 @@ body {
   height: 80px;
 }
 
-.h-screen {
-  height: 100vh;
-}
-
-.w-3\/12 {
-  width: 25%;
+.h-full {
+  height: 100%;
 }
 
 .w-7 {
   width: 1.75rem;
+}
+
+.w-8 {
+  width: 2rem;
 }
 
 .w-80 {
@@ -820,6 +878,10 @@ body {
   width: fit-content;
 }
 
+.w-full {
+  width: 100%;
+}
+
 .flex-none {
   flex: none;
 }
@@ -833,12 +895,26 @@ body {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.scale-95 {
+  --tw-scale-x: .95;
+  --tw-scale-y: .95;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .flex-row {
   flex-direction: row;
 }
 
 .flex-col {
   flex-direction: column;
+}
+
+.items-start {
+  align-items: flex-start;
 }
 
 .items-center {
@@ -855,6 +931,10 @@ body {
 
 .gap-3 {
   gap: 0.75rem;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .rounded-xl {
@@ -876,8 +956,17 @@ body {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.p-2 {
+  padding: 0.5rem;
+}
+
 .p-3 {
   padding: 0.75rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 .px-6 {
@@ -906,6 +995,10 @@ body {
   padding-right: 0.75rem;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -924,9 +1017,24 @@ body {
   font-weight: 800;
 }
 
+.text-Light-gray {
+  --tw-text-opacity: 1;
+  color: rgb(241 242 249 / var(--tw-text-opacity));
+}
+
 .text-gray-400 {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
+.text-Black {
+  --tw-text-opacity: 1;
+  color: rgb(21 24 34 / var(--tw-text-opacity));
+}
+
+.text-gray-500 {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
 .shadow-custom {
@@ -935,16 +1043,10 @@ body {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.transition {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+.transition-all {
+  transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
-}
-
-.delay-150 {
-  transition-delay: 150ms;
 }
 
 .duration-300 {
@@ -953,25 +1055,6 @@ body {
 
 .ease-in-out {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.overflow-auto {
-  overflow: auto;
-}
-
-.overflow-hidden {
-  overflow: hidden;
-}
-
-.hover\:-translate-y-1:hover {
-  --tw-translate-y: -0.25rem;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.hover\:scale-110:hover {
-  --tw-scale-x: 1.1;
-  --tw-scale-y: 1.1;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .hover\:bg-slate-50:hover {
