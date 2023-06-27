@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
+    <title>هرمز فلای! | خرید آنلاین بلیط هواپیمایی</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>هرمز فلای! | خرید آنلاین بلیط هواپیمایی</title>
+    <meta property="og:title" content="هرمز فلای! | خرید آنلاین بلیط هواپیمایی">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://example.com/">
+    <meta property="og:image" content="../assets/img/fav-icon(512x512).png">
+    <meta property="og:description" content="هرمز فلای، یک سامانه خرید آنلاین بلیط هواپیمایی با قیمت مناسب و خدمات عالی.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="هرمز فلای! | خرید آنلاین بلیط هواپیمایی">
+    <meta name="twitter:description" content="هرمز فلای، یک سامانه خرید آنلاین بلیط هواپیمایی با قیمت مناسب و خدمات عالی.">
+    <meta name="twitter:image" content="../assets/img/fav-icon(512x512).png">
 
     <link rel="icon" type="image/x-icon" href="../assets/img/fav-icon(512x512).png">
     <link rel="stylesheet" href="../public/build/main.css">
@@ -14,7 +22,7 @@
     <section>
 
         <div class="bg-White shadow-custom flex justify-between xl:justify-center items-center flex-row h-[80px] px-6 md:px-12 lg:px-24 xl:px-32 2xl:px-36">
-            <div class="flex w-fit justify-center items-center p-3">
+            <div class="flex w-fit h-full justify-center items-center p-3">
                 <a href="#" class="flex">
                     <svg class="me-3" width="40" height="40" viewBox="0 0 67 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_22_122)">
@@ -41,69 +49,122 @@
                 </a>
             </div>
 
-            <div class="hidden xl:flex grow justify-center items-center p-3">
+            <div class="hidden h-full xl:flex grow justify-center items-center px-3">
                 <ul class="navbar">
                     <li class="navbar-item">
                         <a href="#">صفحه اصلی</a>
-                        <svg class="navbar-item-hover" width="71" height="5" viewBox="0 0 71 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="21" width="50" height="5" rx="2.5" fill="#FFB039"/>
-                            <rect x="8" width="10" height="5" rx="2.5" fill="#FFB039"/>
-                            <rect width="5" height="5" rx="2.5" fill="#FFB039"/>
-                        </svg>
                     </li>
                     <li class="navbar-item">
                         <a href="#">بلیط</a>
-                        <svg class="navbar-item-hover" width="71" height="5" viewBox="0 0 71 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="21" width="50" height="5" rx="2.5" fill="#FFB039"/>
-                            <rect x="8" width="10" height="5" rx="2.5" fill="#FFB039"/>
-                            <rect width="5" height="5" rx="2.5" fill="#FFB039"/>
-                        </svg>
                     </li>
                     <li class="navbar-item">
                         <a href="#">پیگیری</a>
-                        <svg class="navbar-item-hover" width="71" height="5" viewBox="0 0 71 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="21" width="50" height="5" rx="2.5" fill="#FFB039"/>
-                            <rect x="8" width="10" height="5" rx="2.5" fill="#FFB039"/>
-                            <rect width="5" height="5" rx="2.5" fill="#FFB039"/>
-                        </svg>
                     </li>
                     <li class="navbar-item">
                         <a href="#">تور</a>
-                        <svg class="navbar-item-hover" width="71" height="5" viewBox="0 0 71 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="21" width="50" height="5" rx="2.5" fill="#FFB039"/>
-                            <rect x="8" width="10" height="5" rx="2.5" fill="#FFB039"/>
-                            <rect width="5" height="5" rx="2.5" fill="#FFB039"/>
-                        </svg>
                     </li>
-                    <li class="navbar-item navbar-item-sub-menu" id="megamenu-btn">
+                    <li class="megamenu-button navbar-item navbar-item-sub-menu">
                         بیشتر
-                        <svg id="megamenu-btn-icon" class="m-1 mt-1.5 duration-300 rotate-180" width="14" height="14" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                        <svg class="megamenu-icon m-1 mt-1.5 transition-all duration-300 ease-in-out transform" width="14" height="14" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
                         </svg>                          
                     </li>
                 </ul>
             </div>
             
-            <div class="hidden xl:flex flex-none w-80 justify-center items-center p-3 gap-3">
+            <div class="hidden h-full xl:flex flex-none w-80 justify-center items-center p-3 gap-3">
                 <button class="btn btn-secondary">پشتیبانی</button>
                 <button class="btn btn-primary">ورود | ثبت نام</button>
             </div>
 
             <div class="flex justify-center items-center xl:hidden">
-                <div id="sidebar-menu" class="sidebar-menu">
+                <div class="mobile-menu-button">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" />
                     </svg> 
                 </div>
+
+                <div class="mobile-menu-button-close hidden">
+                    <svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-8 h-8">
+                        <path d="M14.1421 14.1421L28.2842 28.2843M28.2842 14.1421L14.1421 28.2843" stroke="#131A29" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
             </div>
         </div>
         
-        <div id="mobile-menu" class="hidden w-3/12 h-screen absolute top-0 left-0 bg-white shadow-custom">
+        <div id="mobile-menu" class="hidden w-full h-full absolute top-20 bg-white shadow-custom">
+            <div class="flex flex-col w-full">
+                <ul class="drawer-navbar">
+                    <li class="drawer-navbar-item">
+                        <a href="#">صفحه اصلی</a>
+                    </li>
+                    <li class="drawer-navbar-item">
+                        <a href="#">بلیط</a>
+                    </li>
+                    <li class="drawer-navbar-item">
+                        <a href="#">پیگیری</a>
+                    </li>
+                    <li class="drawer-navbar-item">
+                        <a href="#">تور</a>
+                    </li>
+                    <li class="expand-drawer-button drawer-navbar-item drawer-navbar-item-sub-menu">
+                        بیشتر
+                        <svg class="expand-drawer-icon m-1 mt-1.5 left-0 absolute transition-all duration-300 ease-in-out transform" width="14" height="14" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 15.75l7.5-7.5 7.5 7.5" />
+                        </svg>                          
+                    </li>
+                </ul>
 
+                <div id="expand-drawer" class="hidden flex-col justify-between p-2">
+    
+                    <a href="#">
+                        <div class="flex flex-row items-start justify-between mb-6 p-3 rounded-xl hover:bg-slate-50">
+                            <img src="../assets/img/mega-menu icon 1.png" alt="">
+                            <div class="flex flex-col w-[300px] mr-5">
+                                <h3 class="font-bold pb-1">بیمه مسافرتی</h3>
+                                <p class="text-gray-400 text-sm">بیمه مسافرتی هزینه‌های فوریت‌های پزشکی، مفقودی چمدان و هزینه خسارات را
+                                    جبران می‌کند.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="flex flex-row items-start justify-between mb-6 p-3 rounded-xl hover:bg-slate-50">
+                            <img src="../assets/img/mega-menu icon 2.png" alt="">
+                            <div class="flex flex-col w-[300px] mr-5">
+                                <h3 class="font-bold pb-1">مجله هرمز فلای</h3>
+                                <p class="text-gray-400 text-sm">وبلاگ هرمز فلای جایی برای اطلاع رسانی رویداد ها و نمایش ها در شهر ها و کشور
+                                    های مختلف است.</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="flex flex-row items-start justify-between mb-6 p-3 rounded-xl hover:bg-slate-50">
+                            <img src="../assets/img/mega-menu icon 3.png" alt="">
+                            <div class="flex flex-col w-[300px] mr-5">
+                                <h3 class="font-bold pb-1">هرمز فلای پلاس</h3>
+                                <p class="text-gray-400 text-sm">جمع تجربه های ناب سفر در یکجا با سرویس هرمز فلای پلاس!</p>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="flex flex-col">
+                        <h2 class="font-extrabold text-lg pr-3 pb-2">کرمانشاه؛ میهن فرهاد و شیرین</h2>
+                        <a href="#">
+                            <div class="p-3 rounded-xl hover:bg-slate-50">
+                                <img class="w-[350px] pb-5" src="../assets/img/content image 1.png" alt="">
+                                <h3 class="font-bold">بازار توپخانه</h3>
+                                <p class="text-gray-400 text-sm py-2">بازار بزرگ کرمانشاه ۱۸ راسته دارد که بازار توپخانه یکی از راسته‌های اص...</p>
+                            </div>
+                        </a>
+                    </div>
+    
+                </div>
+
+                <p class="text-center text-gray-500 text-sm mb-5">تمامی حقوق برای هرمز فلای محفوظ است. ۱۳۹۴ - ۱۴۰۲</p>
+            </div>
         </div>
 
-        <div id="megamenu" class="flex-row justify-center hidden">
-            <div class="w-[850px] h-[400px] bg-white shadow-custom rounded-b-[20px]">
+        <div id="megamenu" class="flex-row justify-center hidden transition-all duration-300 ease-in-out scale-95">
+            <div class="w-[850px] h-[400px] bg-white shadow-custom rounded-b-[20px] z-10 fixed">
                 <div class="flex flex-row justify-between m-10">
     
                     <div>
