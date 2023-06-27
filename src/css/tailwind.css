@@ -23,11 +23,11 @@
     }
 
     .navbar {
-        @apply w-full h-full flex justify-around items-center text-Black;
+        @apply w-full h-full flex justify-center items-center text-Black;
     }
 
     .navbar .navbar-item {
-        @apply flex justify-center items-center select-none w-1/5 h-full text-sm font-medium cursor-pointer hover:bg-Light-gray hover:text-gray-500;
+        @apply flex justify-center items-center select-none w-24 h-full text-sm font-medium cursor-pointer;
     }
 
     .navbar .navbar-item:not(.navbar-item-sub-menu) {
@@ -35,7 +35,7 @@
     }
 
     .navbar .navbar-item a {
-        @apply text-center;
+        @apply w-full text-center hover:bg-Light-gray hover:text-gray-500 px-3 py-4 rounded-lg;
     }
 
     .drawer-navbar {
