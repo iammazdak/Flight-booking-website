@@ -85,13 +85,13 @@
 @font-face {
   font-family: "Pinar";
 
-  src: url(../assets/font/Pinar/Pinar-VF.ttf);
+  src: url(/assets/font/Pinar/Pinar-VF.ttf);
 }
 
 @font-face {
   font-family: "Pinar";
 
-  src: url(../assets/font/Pinar/Pinar-FD-VF.ttf);
+  src: url(/assets/font/Pinar/Pinar-FD-VF.ttf);
 }
 
 /* ! tailwindcss v3.3.2 | MIT License | https://tailwindcss.com */
