@@ -17,6 +17,9 @@ module.exports = {
       boxShadow: {
         'custom': '0px 5px 50px 0px #0000001A',
       },
+      FontFace: {
+        'custom': 'pinar',
+      },
     },
   },
   plugins: [],

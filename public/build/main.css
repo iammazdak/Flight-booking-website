@@ -626,6 +626,8 @@ body {
   padding-bottom: 0.625rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
   font-weight: 500;
   transition-duration: 200ms;
 }
@@ -794,6 +796,10 @@ body {
 
 .m-10 {
   margin: 2.5rem;
+}
+
+.m-9 {
+  margin: 2.25rem;
 }
 
 .mb-5 {
@@ -999,6 +1005,11 @@ body {
   text-align: center;
 }
 
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -1015,6 +1026,11 @@ body {
 
 .font-extrabold {
   font-weight: 800;
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .text-gray-400 {

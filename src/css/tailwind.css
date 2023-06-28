@@ -11,7 +11,7 @@
 
 @layer components {
     .btn {
-        @apply py-2.5 px-6 font-medium rounded-[8px] duration-200 hover:shadow-lg;
+        @apply py-2.5 px-6 font-medium text-sm rounded-[8px] duration-200 hover:shadow-lg;
     }
 
     .btn-primary {
