@@ -27,7 +27,7 @@
     }
 
     .navbar .navbar-item {
-        @apply flex justify-center items-center select-none w-24 h-full text-sm font-medium cursor-pointer;
+        @apply flex justify-center items-center select-none w-28 h-full text-sm font-medium cursor-pointer;
     }
 
     .navbar .navbar-item:not(.navbar-item-sub-menu) {
@@ -35,7 +35,7 @@
     }
 
     .navbar .navbar-item a {
-        @apply w-full text-center hover:bg-Light-gray hover:text-gray-500 px-3 py-4 rounded-lg;
+        @apply w-full text-center hover:bg-Light-gray px-5 py-3 rounded-lg;
     }
 
     .drawer-navbar {

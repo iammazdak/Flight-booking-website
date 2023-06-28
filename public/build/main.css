@@ -693,7 +693,7 @@ body {
 .navbar .navbar-item {
   display: flex;
   height: 100%;
-  width: 6rem;
+  width: 7rem;
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -712,18 +712,16 @@ body {
 .navbar .navbar-item a {
   width: 100%;
   border-radius: 0.5rem;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
   text-align: center;
 }
 
 .navbar .navbar-item a:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(241 242 249 / var(--tw-bg-opacity));
-  --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
 .drawer-navbar {
