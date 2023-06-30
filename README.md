@@ -1,4 +1,3 @@
-
 # Flight booking platform
 
 This is a Persian flight booking platform
